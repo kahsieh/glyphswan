@@ -81,7 +81,7 @@ function analyze(char=null) {
       + "href='https://qzj-dict.com/?search=" + char + "'>QZJ Dict</a> or "
       + "<a target='_blank' "
       + "href='https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint="
-      + char + "'>Unihan</a>.<br>";
+      + char + "'>Unihan</a>.";
 
   // Stop here if char isn't the right length.
   if (!(char.length == 1 || isHighSurrogate(char[0]) && char.length == 2)) {
@@ -91,7 +91,8 @@ function analyze(char=null) {
   }
 
   // Start table.
-  html += "<table><thead><tr>"
+  html += " Fonts and databases may take some time to load."
+      + "<table><thead><tr>"
       + "<th>Codepoint</th><th>" + langs.join("</th><th>") + "</th>"
       + "</tr></thead><tbody><tr>"
       + "<td>" + toPoint(char) + "<br>Selected</td>";
