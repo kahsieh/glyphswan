@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<!--
+GlyphSwan
+index.html
+
+Copyright (c) 2009-2018 Kevin Hsieh. All Rights Reserved.
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" />
+<title>GlyphSwan</title>
+<link rel="stylesheet" href="css/materialize.css">
+<link rel="stylesheet" href="css/materialize-icons.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/materialize.js"></script>
+<script src="js/gsdb.js"></script>
+<script src="js/glyphswan.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  M.Tooltip.init(document.querySelectorAll('.tooltipped'), {});
+});
+</script>
+</head>
+<body>
+<header><nav>
+  <div class="nav-wrapper container"><a href="" class="brand-logo">
+    <i class="material-icons">transform</i>GlyphSwan
+  </a></div>
+</nav></header>
+
+<main class="container">
+  <div class="row">
+    <div class="input-field col s12 l6">
+      <textarea id="text" class="materialize-textarea"
+        onselect="analyze()"></textarea>
+      <label for="text">Text to analyze/convert</label>
+      <blockquote id="analysis">
+        <p>Select a character to analyze it.</p>
+      </blockquote>
+    </div>
+
+    <div class="col s12 l6">
+      <table class="centered">
+        <thead><tr>
+          <th colspan="2">Conversions</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              Chinese
+              <i class="material-icons tiny tooltipped" data-position="bottom"
+                data-tooltip="GlyphSwan only performs character conversions,
+                not vocabulary conversions like 光盘 ↔ 光碟.">info</i>
+            </td>
+            <td>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('cSimplifiedVariant')">
+                简 Simplified</button>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('cTraditionalVariant')">
+                繁 Traditional</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kanji
+              <i class="material-icons tiny tooltipped" data-position="bottom"
+                data-tooltip="GlyphSwan only performs character conversions,
+                not kakikae conversions like 車両 ↔ 車輛.">info</i>
+            </td>
+            <td>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('jShinjitai')">新 Shinjitai</button>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('jKyujitai')">舊 Kyūjitai</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Kana</td>
+            <td>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('jHiragana')">あ Hiragana</button>
+              <button class="btn waves-effect waves-light dynamic"
+                onclick="startConvert('jKatakana')">カ Katakana</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="center-align">
+        <label>
+          <input id="mdcheck" type="checkbox" class="filled-in" />
+          <span class="black-text">Manual disambiguation</span>
+        </label>
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="page-footer grey lighten-3 black-text"><div class="container">
+  Copyright © 2009–2018
+  <a target="_blank" href="https://www.kevinhsieh.net">Kevin Hsieh</a>.
+  All Rights Reserved.
+</div></footer>
+</body>
+</html>
