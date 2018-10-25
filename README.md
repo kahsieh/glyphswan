@@ -28,4 +28,7 @@ GlyphSwan provides the following conversions:
   - Maximal coverage of the 92 kana. (Not covered: VA, VI, VE, and VO, whose
     hiragana forms are not represented in Unicode as single codepoints.)
 
+GlyphSwan performs character conversions only, not vocabulary or kakikae
+conversions.
+
 Copyright © 2009–2018 Kevin Hsieh. All Rights Reserved.
