@@ -10,6 +10,7 @@ Copyright (c) 2009-2018 Kevin Hsieh. All Rights Reserved.
 // -----------------------------------------------------------------------------
 
 let converter = null;
+let root_char = null;
 const langs = ["zh-CN", "zh-TW", "ja-JP", "ko-KR"];
 
 // -----------------------------------------------------------------------------
@@ -76,6 +77,11 @@ function analyze(char=null) {
   if (!char) {
     char = id("text").value.slice(id("text").selectionStart,
                                   id("text").selectionEnd);
+    if (char == root_char) {
+      // Stop calls from extraneous onSelect events.
+      return;
+    }
+    root_char = char;
   }
   let html = "Look up selection in <a target='_blank' "
       + "href='https://qzj-dict.com/?search=" + char + "'>QZJ Dict</a> or "
@@ -91,7 +97,7 @@ function analyze(char=null) {
   }
 
   // Start table.
-  html += " Fonts and databases may take some time to load."
+  html += " Fonts may take some time to load."
       + "<table><thead><tr>"
       + "<th>Codepoint</th><th>" + langs.join("</th><th>") + "</th>"
       + "</tr></thead><tbody><tr>"
