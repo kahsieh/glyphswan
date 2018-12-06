@@ -9,6 +9,11 @@ Copyright (c) 2009-2018 Kevin Hsieh. All Rights Reserved.
 // GLOBALS
 // -----------------------------------------------------------------------------
 
+const app = {
+  version: "v0.1.0",
+  update_api: "https://api.github.com/repos/kahsieh/glyphswan/releases/latest"
+};
+
 let converter = null;
 let root_char = null;
 const langs = ["zh-CN", "zh-TW", "ja-JP", "ko-KR"];
@@ -66,6 +71,24 @@ class Converter {
 // -----------------------------------------------------------------------------
 // APPLICATION
 // -----------------------------------------------------------------------------
+
+// Check for updates.
+addEventListener('load', () => {
+  id("app-version").innerText = app.version;
+  let req = new XMLHttpRequest();
+  req.open("GET", app.update_api);
+  req.onreadystatechange = () => {
+    if (!(req.readyState == 4 && (!req.status || req.status == 200))) {
+      return;
+    }
+    const res = JSON.parse(req.responseText);
+    if (res.tag_name && res.tag_name > tag) {
+      id("update-bar").classList.remove("hide");
+      id("update-link").href = res.html_url;
+    }
+  }
+  req.send()
+});
 
 function analyze(char=null) {
   // Don't analyze if a conversion is active.

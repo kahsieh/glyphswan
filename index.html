@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
 </nav></header>
 
 <main class="container">
+  <div id="update-bar" class="row center-align hide"><div class="col s12">
+    An update is available! Click <a id="update-link" target="_blank">here</a>
+    to download it.
+  </div></div>
   <div class="row">
     <div class="input-field col s12 l6">
       <textarea id="text" class="materialize-textarea"
@@ -99,6 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </main>
 
 <footer class="page-footer grey lighten-3 black-text"><div class="container">
+  <a target="_blank" href="https://github.com/kahsieh/glyphswan">GlyphSwan</a>
+  <span id="app-version"></span>
   Copyright © 2009–2018
   <a target="_blank" href="https://www.kevinhsieh.net">Kevin Hsieh</a>.
   All Rights Reserved.
