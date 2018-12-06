@@ -1,0 +1,20 @@
+{
+  "name": "glyphswan",
+  "version": "1.0.0",
+  "description": "Analyze and convert CJK characters.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kahsieh/glyphswan",
+  "keywords": [
+    "analyze",
+    "convert",
+    "CJK",
+    "characters"
+  ],
+  "author": "Kevin Hsieh",
+  "devDependencies": {
+    "electron": "^3.0.7"
+  }
+}
