@@ -10,7 +10,7 @@ Copyright (c) 2009-2018 Kevin Hsieh. All Rights Reserved.
 // -----------------------------------------------------------------------------
 
 const app = {
-  version: "v0.1.0",
+  version: "v5.0.0",
   update_api: "https://api.github.com/repos/kahsieh/glyphswan/releases/latest"
 };
 
