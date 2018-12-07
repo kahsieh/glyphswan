@@ -82,7 +82,7 @@ addEventListener('load', () => {
       return;
     }
     const res = JSON.parse(req.responseText);
-    if (res.tag_name && res.tag_name > tag) {
+    if (res.tag_name && res.tag_name > app.version) {
       id("update-bar").classList.remove("hide");
       id("update-link").href = res.html_url;
     }
