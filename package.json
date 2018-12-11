@@ -1,6 +1,6 @@
 {
   "name": "glyphswan",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Analyze and convert CJK characters.",
   "main": "main.js",
   "scripts": {

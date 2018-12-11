@@ -10,7 +10,7 @@ Copyright (c) 2009-2018 Kevin Hsieh. All Rights Reserved.
 // -----------------------------------------------------------------------------
 
 const app = {
-  version: "v5.0.0",
+  version: "v5.0.1",
   update_api: "https://api.github.com/repos/kahsieh/glyphswan/releases/latest"
 };
 
@@ -158,6 +158,7 @@ function analyze(char=null) {
 
 function startConvert(type) {
   converter = new Converter(id("text").value, type);
+  root_char = null;
   continueConvert();
 }
 
