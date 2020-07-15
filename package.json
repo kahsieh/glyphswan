@@ -1,6 +1,6 @@
 {
   "name": "glyphswan",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Analyze and convert CJK characters.",
   "main": "main.js",
   "scripts": {
@@ -16,14 +16,16 @@
   "homepage": "https://www.kevinhsieh.net",
   "author": "Kevin Hsieh",
   "devDependencies": {
-    "electron": "^3.0.7",
-    "electron-builder": "^20.38.2"
+    "electron": "^9.1.0",
+    "electron-builder": "^22.7.0"
   },
   "build": {
     "productName": "GlyphSwan",
     "appId": "net.kevinhsieh.glyphswan",
     "win": {
-      "target": ["portable"]
+      "target": [
+        "portable"
+      ]
     }
   }
 }
