@@ -2,7 +2,7 @@
 GlyphSwan
 gsdb.js
 
-Copyright (c) 2009-2020 Kevin Hsieh. All Rights Reserved.
+Copyright (c) 2009-2021 Kevin Hsieh. All Rights Reserved.
 Parts of this file are derived from the Unihan Database.
 */
 

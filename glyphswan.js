@@ -2,7 +2,7 @@
 GlyphSwan
 glyphswan.js
 
-Copyright (c) 2009-2020 Kevin Hsieh. All Rights Reserved.
+Copyright (c) 2009-2021 Kevin Hsieh. All Rights Reserved.
 */
 
 // -----------------------------------------------------------------------------
@@ -10,7 +10,7 @@ Copyright (c) 2009-2020 Kevin Hsieh. All Rights Reserved.
 // -----------------------------------------------------------------------------
 
 const app = {
-  version: "v5.0.2",
+  version: "v5.0.3",
   update_api: "https://api.github.com/repos/kahsieh/glyphswan/releases/latest"
 };
 
@@ -96,7 +96,7 @@ function analyze(char=null) {
     return;
   }
 
-  // Get selected character if char isn't specified. Add lookup links.
+  // Get selected character if char isn't specified.
   if (!char) {
     char = id("text").value.slice(id("text").selectionStart,
                                   id("text").selectionEnd);
@@ -106,11 +106,6 @@ function analyze(char=null) {
     }
     root_char = char;
   }
-  let html = "Look up selection in <a target='_blank' "
-      + "href='https://qzj-dict.com/?search=" + char + "'>QZJ Dict</a> or "
-      + "<a target='_blank' "
-      + "href='https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint="
-      + char + "'>Unihan</a>.";
 
   // Stop here if char isn't the right length.
   if (!(char.length == 1 || isHighSurrogate(char[0]) && char.length == 2)) {
@@ -120,7 +115,10 @@ function analyze(char=null) {
   }
 
   // Start table.
-  html += " Fonts may take some time to load."
+  let html = "Click <a target='_blank' "
+      + "href='https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint="
+      + char + "'>here</a> for Unihan entry."
+      + " Fonts may take some time to load."
       + "<table><thead><tr>"
       + "<th>Codepoint</th><th>" + langs.join("</th><th>") + "</th>"
       + "</tr></thead><tbody><tr>"

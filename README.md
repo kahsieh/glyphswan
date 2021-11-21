@@ -6,8 +6,8 @@ Analyze and convert CJK characters.
 When a character is selected, GlyphSwan renders the character and its variants
 (from GlyphSwan conversion tables and the Unihan database) in four languages:
 `zh-CN`, `zh-TW`, `ja-JP`, and `ko-KR`, so that language variants can be easily
-compared. Analysis of secondary variants is available, and links are provided
-to look up the selection in QZD Dict or the Unihan database.
+compared. Analysis of secondary variants is available, and a link is provided
+to look up the selection the Unihan database.
 
 ## Conversion
 
@@ -31,4 +31,4 @@ GlyphSwan provides the following conversions:
 GlyphSwan performs character conversions only, not vocabulary or kakikae
 conversions.
 
-Copyright © 2009–2020 Kevin Hsieh. All Rights Reserved.
+Copyright © 2009–2021 Kevin Hsieh. All Rights Reserved.
