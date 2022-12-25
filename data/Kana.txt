@@ -1,7 +1,7 @@
 # GlyphSwan
 # Kana.txt
 #
-# Copyright (c) 2009-2021 Kevin Hsieh. All Rights Reserved.
+# Copyright (c) 2009-2022 Kevin Hsieh. All Rights Reserved.
 
 U+30A2	jHiragana	U+3042
 U+30A1	jHiragana	U+3041

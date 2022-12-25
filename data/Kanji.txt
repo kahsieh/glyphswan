@@ -1,7 +1,7 @@
 # GlyphSwan
 # Kanji.txt
 #
-# Copyright (c) 2009-2021 Kevin Hsieh. All Rights Reserved.
+# Copyright (c) 2009-2022 Kevin Hsieh. All Rights Reserved.
 
 U+4E9E	jShinjitai	U+4E9C
 U+54C0	jShinjitai	U+54C0
