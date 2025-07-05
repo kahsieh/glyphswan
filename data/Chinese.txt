@@ -1,7 +1,7 @@
 # GlyphSwan
 # Chinese.txt
 #
-# Copyright (c) 2009-2022 Kevin Hsieh. All Rights Reserved.
+# Copyright (c) 2009-2025 Kevin Hsieh. All Rights Reserved.
 
 U+4E00	cSimplifiedVariant	U+4E00
 U+4E59	cSimplifiedVariant	U+4E59
@@ -7053,7 +7053,7 @@ U+584F	cSimplifiedVariant	U+57B2
 U+57CF	cSimplifiedVariant	U+57CF
 U+578D	cSimplifiedVariant	U+578D
 U+8007	cSimplifiedVariant	U+8007
-	cSimplifiedVariant	
+	cSimplifiedVariant
 U+578E	cSimplifiedVariant	U+578E
 U+5816	cSimplifiedVariant	U+57B4
 U+579F	cSimplifiedVariant	U+579F
@@ -7425,7 +7425,7 @@ U+6879	cSimplifiedVariant	U+6879
 U+6554	cSimplifiedVariant	U+6554
 U+53B4	cSimplifiedVariant	U+53A3
 U+7854	cSimplifiedVariant	U+7854
-U+40EE	cSimplifiedVariant	
+U+40EE	cSimplifiedVariant
 U+78D1	cSimplifiedVariant	U+7859
 U+785A	cSimplifiedVariant	U+785A
 U+784A	cSimplifiedVariant	U+784A
@@ -15161,7 +15161,7 @@ U+57B2	cTraditionalVariant	U+584F
 U+57CF	cTraditionalVariant	U+57CF
 U+578D	cTraditionalVariant	U+578D
 U+8007	cTraditionalVariant	U+8007
-	cTraditionalVariant	
+	cTraditionalVariant
 U+578E	cTraditionalVariant	U+578E
 U+57B4	cTraditionalVariant	U+5816
 U+579F	cTraditionalVariant	U+579F

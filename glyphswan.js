@@ -2,7 +2,7 @@
 GlyphSwan
 glyphswan.js
 
-Copyright (c) 2009-2022 Kevin Hsieh. All Rights Reserved.
+Copyright (c) 2009-2025 Kevin Hsieh. All Rights Reserved.
 */
 
 // -----------------------------------------------------------------------------
@@ -10,7 +10,7 @@ Copyright (c) 2009-2022 Kevin Hsieh. All Rights Reserved.
 // -----------------------------------------------------------------------------
 
 const app = {
-  version: "v5.0.4",
+  version: "v5.0.5",
   update_api: "https://api.github.com/repos/kahsieh/glyphswan/releases/latest"
 };
 

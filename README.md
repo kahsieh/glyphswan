@@ -31,4 +31,4 @@ GlyphSwan provides the following conversions:
 GlyphSwan performs character conversions only, not vocabulary or kakikae
 conversions.
 
-Copyright © 2009–2022 Kevin Hsieh. All Rights Reserved.
+Copyright © 2009–2025 Kevin Hsieh. All Rights Reserved.
